@@ -1,0 +1,46 @@
+body{
+  background-color: aqua;
+}
+.main {
+  border: 2px solid white;
+  margin:3px;
+  padding:5px;
+  font-weight: bold;
+  background-color: azure;
+
+}
+input{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left:10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin:3px;
+  margin-left:10px;
+}
+h1{
+  text-align: center;
+}
+.description{
+  text-align: center;
+  font-weight: bold;
+}
+section{
+  font-weight: bold;
+  text-align:center;
+  background-color: azure;
+  height:100px;
+  margin-top:20px;
+  padding-top: 20px;
+}
+
+p{
+  margin-left: 20px; 
+}
+.mainForm{
+  margin-right: 20px;
+}
+.displayStory{
+  font-size: 20px;
+  color:blue;
+}

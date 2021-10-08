@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title %}Home Page{% endblock %} {% block
+content %}
+<h1>MAD LIBS: Create your story.</h1>
+<p class="description">Fill in the following categories:</p>
+<form class="main" action="/writeStory">
+  {% for prompt in prompts %}
+  <p class="mainForm">
+    {{prompt.upper()}}:
+    <input name="{{ prompt }}" />
+  </p>
+  {% endfor %}
+  <input type="hidden" name="storyId" value="{{ storyId}}" />
+  <button>Submit</button>
+</form>
+{% endblock %}

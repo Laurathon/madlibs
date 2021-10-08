@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %}Choose Story Page{% endblock %} {%
+block content %}
+<h1>Choose a story below:</h1>
+<section>
+  {{text}}
+  <form action="/choose">
+    <label for="chooseStory">Do you want this story?</label>
+    <input type="hidden" id="chooseStory" name="custId" value="1" />
+    <input id="chooseStory" type="checkbox" name="choose" />
+    <button>Submit!</button>
+  </form>
+</section>
+<section>
+  {{text2}}
+  <form action="/choose">
+    <label for="chooseStory">Do you want this story?</label>
+    <input type="hidden" id="chooseStory" name="custId" value="2" />
+    <input id="chooseStory" type="checkbox" name="choose" />
+    <button>Submit!</button>
+  </form>
+</section>
+
+{% endblock %}
